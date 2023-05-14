@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="mara peasley">
+    
+    <title>Revolution App</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap" rel="stylesheet">
+
+    
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <header>
+    <button class="hamburger"><img src="images/hamburger.svg" alt="menu button"></button>
+	<button class="cross"><img src="images/cross.svg" alt="close menu button"></button>
+
+    <p>Revolution</p>
+    
+        
+    </header>
+
+    <main>
+
+        <nav class="menu">       
+            <ul>
+                <li><a>About</a></li>
+                <li><a>Cycles</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+        
+        <nav class="menu_desktop">        
+            <ul>
+                <li><a>About</a></li>
+                <li><a>Cycles</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- _______________________________________ -->
+
+        <section class="hero">
+            <!-- <img class="behind" src="images/home_calendar_brown.png" alt=" ">
+            <img class="front" src="images/home_cycle_brown.png" alt=" "> -->
+            <img src="images/home_double_brown.png">
+            <div>
+                <h1>Revolutionize Your Rhythm</h1>
+                <h2 style="padding-bottom: 0;">Let's work with our bodies instead of against them.</h2>
+                
+                <button>Download Now</button>
+                <button class="desktop">Download Now</button>
+
+                <p>Something about how your uterus does not define who you are. So we made an app for the whole badass you.</p>
+            </div>
+
+        </section>
+
+        <section class="audience">
+            <h3>Something else about why people use it.</h3>
+            <div>
+                <img src="images/womanonbed.jpg">
+                <p>In our society, it's a startling reality that many women do not possess the depth of understanding about their own bodies as they should. This lack of awareness can lead to a disconnect from your own body, and can be unnecessarily stressful and anxiety inducing. We firmly believe that every woman deserves comprehensive, accessible information about her body, in order to cultivate a relationship of understanding, respect, and empowerment.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div>
+                <h4>Feature #1</h4>
+                <img src="images/home_calendar_blue.png" alt="">
+                <!-- <img class="featureicon" src="images/moonicon_white.svg" alt=" "> -->
+                <p>Wow a feature would be described here. Cool!</p>
+            </div>
+
+            <div>
+                <h4>Feature #2</h4>
+                <img src="images/home_calendar_blue.png" alt="">
+                <!-- <img class="featureicon" src="images/cycleicon_white.svg" alt=" "> -->
+                <p>Wow a feature would be described here. Cool!</p>
+            </div>
+
+            <div>
+                <h4>Feature #3</h4>
+                <img src="images/home_calendar_brown.png" alt="">
+                <!-- <img class="featureicon" src="images/hearticon_white.svg" alt=" "> -->
+                <p>Wow a feature would be described here. Cool!</p>
+            </div>
+
+            <div>
+                <h4>Feature #4</h4>
+                <img src="images/home_calendar_green.png" alt="">
+                <!-- <img class="featureicon" src="images/accounticon_white.svg" alt=" "> -->
+                <p>Wow a feature would be described here. Cool!</p>
+            </div>
+
+        </section>
+
+        <section class="custom">
+            <div>
+            <h3>Something else about why people use it.</h3>
+            <img src="images/colorcustom.gif">
+            <p>Despite the importance of menstrual health, many women lack comprehensive understanding of their own bodies. This gap in knowledge often leads to confusion and unnecessary stress. It's high time we empower every woman with accessible information, fostering a stronger connection with her own physiology.</p>
+            </div>
+
+        </section>
+
+        <section class="percentage">
+            <div>
+            <h3>Something else about why people use it.</h3>
+            <img src="images/hexagon_dark.svg">
+            <p>Despite the importance of menstrual health, many women lack comprehensive understanding of their own bodies. This gap in knowledge often leads to confusion and unnecessary stress. It's high time we empower every woman with accessible information, fostering a stronger connection with her own physiology.</p>
+            </div>
+
+        </section>
+        
+        <section class="wrapup">
+            <p>A wrap up for phone app and experience.</p>
+            <button style="margin-bottom: 0;">Download Now</button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="copy">&#169; Copyright Mara Elise Peasley 2023</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/scrollingbox.js"></script>
+
+</body>
+</html>

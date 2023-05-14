@@ -1,0 +1,451 @@
+/*
+
+File Name: style.less
+Date: 05/08/23
+Programmer: Mara Peasley
+
+*/
+/*Black and White variables*/
+/*Color Palette:
+Source = https://color.adobe.com/create/image
+(custom palette for AAA Web Accessibility)
+*/
+/*Parametric mixin for headings */
+/*End parametric mixin for headings*/
+/*50% transparent*/
+/*text underlined and italicized*/
+/*text uppercase and bold*/
+/*image flip*/
+/*invert colors and serif*/
+/*make it pink*/
+/*sepia photo with shadow*/
+/*green border*/
+/*.topBorder() {
+    border-top: double .5em #000000;
+}*/
+/* MOBILE STYLESHEET */
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  box-shadow: #CEC1B1 -2px 2px 0px 0px;
+  padding: 1em;
+  background-color: #F7EEE9;
+}
+header .hamburger img,
+header .cross img {
+  width: 2.4em;
+}
+header button {
+  border: none;
+  background-color: #F7EEE9;
+  margin: auto;
+  float: right;
+}
+header p {
+  font-size: 1.3em;
+}
+nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 7%;
+  color: #000000;
+  background-color: #F7EEE9;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 0 0 15px 15px;
+}
+nav a {
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  background-color: #F7EEE9;
+  color: #000000;
+  width: auto;
+  padding: 0.25em 1em 0.25em 3.5em;
+  margin: 0.4em;
+}
+nav a:hover {
+  font-style: italic;
+  background-color: #92826e;
+}
+nav a:active {
+  background-color: #584E42;
+}
+nav.menu_desktop {
+  display: none;
+}
+main {
+  background-image: url(../images/leavesbg25.png);
+  background-position: top;
+  background-repeat: repeat;
+  background-attachment: inherit;
+  background-color: #F7EEE9;
+}
+main img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+main .behind {
+  position: relative;
+  left: 45px;
+  top: 20px;
+  opacity: 70%;
+}
+main .front {
+  position: relative;
+  top: -400px;
+  right: 42px;
+}
+main h1 {
+  font-size: 1.75em;
+  text-align: center;
+  padding-top: 1em;
+  font-weight: 500;
+  line-height: 1.2em;
+  padding: 1em 0.5em 0 0.5em;
+}
+main h2 {
+  padding: 1em;
+  text-align: center;
+}
+main p {
+  padding: 0 1em 0 1.5em;
+}
+main button {
+  background-color: #393229;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: solid 3px #a7ac27;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1em;
+  padding: 1em 2em;
+  display: block;
+  margin: 1em auto;
+}
+main button.desktop {
+  display: none;
+}
+main #greenBox {
+  position: absolute;
+  right: -100px;
+  /* Start off screen */
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+main section.features {
+  text-align: center;
+  margin: 3em 1em;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  padding: 0.01em 1em;
+}
+main section.features div {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 1.75em 1em;
+  border-radius: 15px;
+}
+main section.features h4 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 0;
+}
+main section.features h4:first-child {
+  margin-top: 0;
+}
+main section.features p {
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 0.5em;
+}
+main section.features img.featureicon {
+  width: 40%;
+  background-color: #584E42;
+  border: solid 3px #a7ac27;
+  border-radius: 100%;
+  padding: 0.5em;
+  margin: 0 auto 1em auto;
+}
+main section.features img.featureimgexample {
+  display: block;
+  width: 100%;
+}
+main section.audience {
+  margin-bottom: 5em;
+}
+main section.audience h3 {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 1em;
+}
+main section.audience img {
+  border-radius: 100%;
+  margin: 0 auto;
+  width: 80%;
+}
+main section.audience p {
+  margin: 1em;
+  text-align: center;
+  font-size: 1.1em;
+}
+main section.custom {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main section.custom h3 {
+  font-size: 1.4em;
+  text-align: center;
+}
+main section.custom img {
+  padding: 1em;
+  border-radius: 30px;
+}
+main section.percentage div {
+  padding-top: 2em;
+}
+main section.percentage h3 {
+  text-align: center;
+  font-size: 1.4em;
+  margin: 1em;
+}
+main section.percentage p {
+  margin: 1em;
+  text-align: center;
+  font-size: 1.1em;
+}
+main section.wrapup {
+  margin-top: 5em;
+  padding-bottom: 1em;
+}
+main section.wrapup p {
+  margin: 0 auto;
+  width: 65%;
+}
+footer {
+  background-color: #8C8070;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em;
+}
+footer #copy {
+  font-size: 0.65em;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #8C8070;
+}
+body {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  background-color: #F7EEE9;
+  color: #393229;
+}
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+@media only screen and (min-width: 481px) {
+  header .hamburger img,
+  header .cross img {
+    width: 3.5em;
+  }
+  header nav {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+@media only screen and (min-width: 1025px) {
+  header button.hamburger {
+    visibility: hidden;
+  }
+  header button.cross {
+    visibility: hidden;
+  }
+  header p {
+    font-size: 2em;
+    padding: 0.5em 1em;
+  }
+  nav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 0;
+  }
+  nav a {
+    padding-left: 6em;
+    padding-right: 6em;
+    background-color: #F7EEE9;
+  }
+  nav a:hover {
+    background-color: #92826e;
+  }
+  nav.menu_desktop {
+    display: block;
+    opacity: 90%;
+    padding: 0em;
+  }
+  nav.menu_desktop a {
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 0.85em;
+    border-radius: 0;
+  }
+  nav.menu_desktop li {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  ul {
+    top: 28px;
+    right: 10px;
+    position: fixed;
+  }
+  main section.hero {
+    padding-bottom: 10em;
+    padding-top: 3em;
+  }
+  main section.hero div {
+    padding-left: 3em;
+  }
+  main section.hero img {
+    float: right;
+    padding-right: 10em;
+  }
+  main section.hero h1 {
+    font-size: 4em;
+  }
+  main section.hero h2 {
+    font-size: 2em;
+    line-height: 1.4em;
+  }
+  main section.hero p {
+    text-align: center;
+  }
+  main section.hero button {
+    display: none;
+  }
+  main section.hero button.desktop {
+    display: block;
+    margin: 2em auto;
+  }
+  main section.audience {
+    clear: both;
+  }
+  main section.audience img {
+    width: 15%;
+    display: inline-block;
+    border-radius: 50px;
+    vertical-align: top;
+  }
+  main section.audience div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  main section.audience h3 {
+    width: 50%;
+    font-size: 2em;
+  }
+  main section.audience p {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1.1em;
+    width: 75%;
+    line-height: 3em;
+    padding-bottom: 4em;
+  }
+  main section.features {
+    clear: both;
+  }
+  main section.features div {
+    display: inline-block;
+    width: 20%;
+  }
+  main section.features img {
+    padding: 0.5em;
+  }
+  main section.features img.featureimgexample {
+    width: 20%;
+  }
+  main section.custom {
+    clear: both;
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 40px;
+  }
+  main section.custom img {
+    width: 40%;
+    vertical-align: top;
+    float: right;
+  }
+  main section.custom h3 {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+  }
+  main section.custom p {
+    margin: 0 4em;
+    font-size: 1.2em;
+    width: 45%;
+    line-height: 3em;
+    margin-bottom: 10em;
+  }
+  main section.percentage {
+    background-color: rgba(255, 255, 255, 0.25);
+    clear: both;
+    padding-top: 2em;
+    padding-bottom: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 40px;
+  }
+  main section.percentage img {
+    width: 30%;
+    vertical-align: top;
+    float: left;
+    padding: 0 2em;
+  }
+  main section.percentage h3 {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em;
+  }
+  main section.percentage p {
+    text-align: right;
+    margin: 0 4em;
+    font-size: 1.2em;
+    width: 85%;
+    line-height: 3em;
+  }
+  main section.wrapup {
+    clear: both;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  footer {
+    clear: both;
+  }
+}

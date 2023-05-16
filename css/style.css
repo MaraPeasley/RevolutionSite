@@ -110,7 +110,14 @@ main h2 {
   text-align: center;
 }
 main p {
+  font-size: 1.25em;
   padding: 0 1em 0 1.5em;
+}
+main em {
+  font-style: italic;
+}
+main strong {
+  font-weight: bold;
 }
 main button {
   background-color: #393229;
@@ -143,15 +150,16 @@ main section.features {
   padding: 0.01em 1em;
 }
 main section.features div {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(88, 78, 66, 0.5);
   margin: 1.75em 1em;
   border-radius: 15px;
 }
 main section.features h4 {
-  font-size: 1.4em;
+  font-size: 2.4em;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   padding: 0.5em 0;
+  color: #FFFFFF;
 }
 main section.features h4:first-child {
   margin-top: 0;
@@ -160,6 +168,7 @@ main section.features p {
   width: 65%;
   margin: 0 auto;
   padding-bottom: 0.5em;
+  color: #FFFFFF;
 }
 main section.features img.featureicon {
   width: 40%;
